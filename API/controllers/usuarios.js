@@ -1,8 +1,18 @@
-const { getUsuario, insereUsuario, modificaUsuario, deletaUsuarioPorId } = require('../services/usuario');
+const { buscaUsuarios, buscaUsuarioPorId, insereUsuario, modificaUsuario, deletaUsuarioPorId } = require('../services/usuario');
 
 function getTodosUsuarios(req, res) {
   try {
-    const usuario = getUsuario();
+    const usuario = buscaUsuarios();
+    res.send(usuario);
+  } catch (error) {
+    res.status(500);
+    res.send(`Ocorreu um erro ${error.message}`);
+  }
+}
+
+function getUsuarioPorId(req, res) {
+  try {
+    const usuario = buscaUsuarioPorId();
     res.send(usuario);
   } catch (error) {
     res.status(500);
@@ -49,6 +59,7 @@ function deleteUsuario(req, res) {
 
 module.exports = {
   getTodosUsuarios,
+  getUsuarioPorId,
   postUsuario,
   patchUsuario,
   deleteUsuario

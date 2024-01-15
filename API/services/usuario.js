@@ -1,6 +1,10 @@
 const fs = require('fs');
 
-function getUsuario() {
+function buscaUsuarios() {
+  return JSON.parse(fs.readFileSync('./usuarios.json'));
+}
+
+function buscaUsuarioPorId() {
   return 'Usuário';
 }
 
@@ -17,7 +21,8 @@ function deletaUsuarioPorId(id) {
 }
 
 module.exports = {
-  getUsuario,
+  buscaUsuarios,
+  buscaUsuarioPorId,
   insereUsuario,
   modificaUsuario,
   deletaUsuarioPorId
