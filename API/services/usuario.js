@@ -1,7 +1,10 @@
 const fs = require('fs');
 
+const path = require('path');
+const caminhoAbsoluto = path.resolve(__dirname, '../db/usuarios.json');
+
 function buscaUsuarios() {
-  return JSON.parse(fs.readFileSync('./usuarios.json'));
+  return JSON.parse(fs.readFileSync(caminhoAbsoluto));
 }
 
 function buscaUsuarioPorId() {
