@@ -12,7 +12,8 @@ function getTodosUsuarios(req, res) {
 
 function getUsuarioPorId(req, res) {
   try {
-    const usuario = buscaUsuarioPorId();
+    const id =req.params.id;
+    const usuario = buscaUsuarioPorId(id);
     res.send(usuario);
   } catch (error) {
     res.status(500);

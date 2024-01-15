@@ -7,8 +7,11 @@ function buscaUsuarios() {
   return JSON.parse(fs.readFileSync(caminhoAbsoluto));
 }
 
-function buscaUsuarioPorId() {
-  return 'Usuário';
+function buscaUsuarioPorId(id) {
+  const listaUsuarios = JSON.parser(fs.readFileSync(caminhoAbsoluto))
+
+  const usuarioFiltrado = listaUsuarios.filter(item => { item.id === id})[0]
+  return usuarioFiltrado;
 }
 
 function insereUsuario(usuarioNovo) {
