@@ -12,7 +12,7 @@ function getTodosUsuarios(req, res) {
 
 function getUsuarioPorId(req, res) {
   try {
-    const id =req.params.id;
+    const id = req.params.id;
     const usuario = buscaUsuarioPorId(id);
     res.send(usuario);
   } catch (error) {
@@ -38,9 +38,9 @@ function patchUsuario(req, res) {
     const id = req.params.id;
     const body = req.body;
 
-    modificaUsuario(body, id)
+    modificaUsuario(body, id);
 
-    res.status(200)
+    res.status(200);
     res.send('Usuário modificado com sucesso');
   } catch (error) {
     res.status(500);
@@ -51,7 +51,10 @@ function patchUsuario(req, res) {
 function deleteUsuario(req, res) {
   try {
     const id = req.params.id;
-    deletaUsuarioPorId(id)
+    deletaUsuarioPorId(id);
+
+    res.status(200);
+    res.send('Usuário deletado com sucesso');
   } catch (error) {
     res.status(500);
     res.send(error.message)
