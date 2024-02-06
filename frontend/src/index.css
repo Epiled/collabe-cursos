@@ -1,0 +1,40 @@
+
+
+*{
+    font-family: var(--fonte-principal);
+}
+
+:root {
+    /* Main colors */
+    --main-green-color: #4bc400;
+    --purple-buttons-color: #9721ff;
+    
+    /* Shades of main green */
+    --light-green-color: #3ca300;
+    --medium-green-color1: #2b8000;
+    --medium-green-color2: #1a5f00;
+    --dark-green-color: #094200;
+    
+    /* Shades of purple with different transparency levels */
+    --light-purple-color: #8210e1;
+    --medium-purple-color: #6a0bc7;
+    --dark-purple-color: #5206ad;
+     
+    /* Neutral black and white colors */
+    --black-color: #000000;
+    --white-color: #ffffff;
+    
+    /* Shades of white */
+    --light-white-color01: #e6e6e6;
+    
+    /* Shades of black */
+    --black-color01: #1a1a1a;
+    
+    /* Yellow color for favorite star */
+    --favorite-star-yellow-color: #fde830;
+    
+    /* Fonts */
+    --primary-font: "Fira Code", monospace;
+    --text-font: 'Inconsolata', monospace;
+  }
+  
