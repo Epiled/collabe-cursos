@@ -1,16 +1,16 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import './assets/styles/reset.css'
-import Menu_mobile from './components/Menu_mobile/Menu_mobile'
+import { BrowserRouter as Router } from "react-router-dom";
+import "./assets/styles/reset.css";
+import ResponsiveNavigation from "./components/ResponsiveNavigation/ResponsiveNavigation";
+
 
 function App() {
   return (
     <>
-    <Router>
-      <Menu_mobile/> 
-    </Router>
-          
+      <Router>
+        <ResponsiveNavigation />
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

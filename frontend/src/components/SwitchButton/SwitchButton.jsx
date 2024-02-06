@@ -1,10 +1,10 @@
 import { useState } from "react";
-import styles from "./switchButton.module.css";
+import styles from "./styleSwitchButton.module.css";
 
 import PropTypes from "prop-types";
 
 export default function SwitchButton({ onChange }) {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
 
   const handleToggle = () => {
     const newValue = !isChecked;

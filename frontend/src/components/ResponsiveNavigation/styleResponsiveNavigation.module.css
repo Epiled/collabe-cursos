@@ -1,0 +1,166 @@
+body {
+  color: #fff;
+  background-color: #000000df;
+  background-image: url("../../assets/images/background.svg");
+}
+
+body.whiteMode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.item_li {
+  color: #fff;
+  font-size: 1rem;
+  padding: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: color .2s;
+}
+
+.item_li:hover {
+  color: #4bc400;
+}
+
+a {
+  width: 100%;
+  text-align: center;
+}
+
+/* Navigation.module.css */
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para dispositivos móveis */
+  .container_header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: 60px;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 20px 1px rgba(44, 44, 44, 0.73);
+  }
+  
+  .btn_hamburguer {
+    z-index: 99;
+    padding: 1rem;
+  }
+  
+  .overlayActive::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor semi-transparente */
+    z-index: 0; 
+  }
+
+  nav {
+    top: 0;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    border-radius: 0px 0px 0px 20px;
+    border-left: 8px solid #4bc400;
+    display: none;
+    border-bottom: 8px solid #4bc400;
+  }
+  
+  .container_buttons {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #4bc400;
+    border-radius: 0px 0px 0px 10px;
+  }
+  
+  .navList li {
+    padding: 2rem;
+    list-style: none;
+    background-color: #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+    box-shadow: inset 0 4px 4.7px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .navList li:hover {
+    background-color: #000000d7;
+  }
+  
+  .navList li:last-child {
+    border-radius: 0px 0px 0px 10px;
+  }
+
+  li.active {
+    background-color: #3a9502;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+  }
+
+  nav.close {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Estilos para desktops */
+  img {
+    background-color: none;
+  }
+  
+  .container {
+    padding: 2rem;
+    height: 4rem;
+    justify-content: space-between;
+    background-color: #000000;
+    box-shadow: 2px 2px 20px 1px rgba(44, 44, 44, 0.73);
+  }
+  
+  .navList .container_buttons {
+    padding: 1rem;
+  }
+  
+  .container,
+  ul.navList,
+  div.container nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navList li {
+    width: 80px;
+    padding: 4px;
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 4px 4px 4.7px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn_hamburguer {
+    display: none;
+  }
+
+  .btn_close {
+    display: none;
+  }
+
+  .activeDesktop {
+    border: 2px solid #4bc400;
+  }
+}
