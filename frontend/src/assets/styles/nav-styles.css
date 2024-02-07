@@ -1,0 +1,21 @@
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    /* Estilos para links ativos dentro de elementos <li> */
+    li a.active {
+      background-color: #3a9502; /* Cor de fundo para link ativo */
+      text-decoration: underline; /* Sublinhado para link ativo */
+      text-decoration-color: var(--white-color); /* Cor do sublinhado para link ativo */
+    }
+  }
+  
+  /* Estilos para desktops */
+  @media only screen and (min-width: 769px) {
+    /* Estilos para links ativos dentro de elementos <li> */
+    li a.active {
+      color: var(--main-green-color); /* Cor do texto para link ativo */
+      border-radius: 8px; /* Raio da borda para link ativo */
+      border: 2px solid var(--main-green-color); /* Borda sólida para link ativo */
+      box-shadow: inset 0 4px 4.7px 0 rgba(128, 128, 128, 0.5); /* Sombra interna para link ativo */
+    }
+  }
+  
