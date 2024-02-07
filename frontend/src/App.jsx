@@ -1,12 +1,16 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import "./assets/styles/reset.css";
+import ResponsiveNavigation from "./components/ResponsiveNavigation/ResponsiveNavigation";
+
 
 function App() {
-
-
   return (
     <>
-         <h1>Hello world!</h1>
+      <Router>
+        <ResponsiveNavigation />
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
