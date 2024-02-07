@@ -1,8 +1,13 @@
 
 
-*{
-    font-family: var(--fonte-principal);
-}
+* {
+    font-family: var(--fonte-principal), sans-serif; /* Adicionando uma fonte de fallback para compatibilidade */
+    -webkit-font-family: var(--fonte-principal), sans-serif; /* Prefixo de fornecedor para compatibilidade com navegadores */
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
 
 :root {
     /* Main colors */
@@ -37,4 +42,7 @@
     --primary-font: "Fira Code", monospace;
     --text-font: 'Inconsolata', monospace;
   }
+
+
   
+ 

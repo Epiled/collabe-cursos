@@ -1,56 +1,86 @@
+/* Estilos para o corpo da página */
+body {
+  height: 100vh;
+}
+
+/* Estilos para o container principal */
 .container {
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+  min-height: 320px;
   display: flex;
-  padding: 2rem;
+  position: relative;
+  padding: 40px 20px;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Estilos para as seções de conteúdo */
 .container .content_section {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Estilos para os títulos */
 .container .content_section h1 {
   width: 15rem;
   font-weight: bold;
   font-family: var(--primary-font);
   letter-spacing: 1px;
-  margin :20px 0 20px;
+  margin: 12px 0;
   overflow: hidden;
 }
 
+/* Estilos para os parágrafos */
 .container .content_section p {
+  min-width: 300px;
+  max-width: 680px;
   text-align: left;
   font-size: 1.1rem;
-  margin-bottom: 40px;
   line-height: 1.5;
+  margin-bottom: 2rem;
   font-family: var(--text-font);
 }
 
+/* Estilos para a seção de imagem */
 .image_section {
   display: flex;
-  padding: 4rem;
+  padding: 10px;
+  margin-bottom: 18px;
   align-items: center;
   justify-content: center;
 }
+
+/* Estilos para o destaque dentro dos títulos */
 .container .content_section h1 .highlight {
   color: var(--main-green-color);
 }
+
+/* Estilos para o container de botões */
 .container_btn {
   width: 100%;
   text-align: center;
   overflow: hidden;
 }
 
-@media only screen and (min-width: 769px) {
-    .container{
-        padding:0  5rem;
-        flex-direction: row;
-    }
-    .container_btn{
+/* Estilos para as imagens */
+picture img {
+  width: 26rem;
+}
 
-        text-align: start;
-    }
+/* Estilos para telas maiores que 768px */
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100%;
+    padding: 5rem;
+    flex-direction: row;
+  }
+
+  .container_btn {
+    text-align: start;
+  }
 }
