@@ -1,6 +1,7 @@
 /* Estilos para o corpo da página */
 body {
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 /* Estilos para o container principal */
@@ -8,8 +9,10 @@ body {
   height: 100%;
   margin: auto;
   max-width: 1200px;
-  min-height: 320px;
+  min-height: 300px;
+  /* max-height: 80vh; */
   display: flex;
+  flex: 1;
   position: relative;
   padding: 40px 20px;
   overflow: hidden;
@@ -31,7 +34,7 @@ body {
   font-weight: bold;
   font-family: var(--primary-font);
   letter-spacing: 1px;
-  margin: 12px 0;
+  margin: 18px 0;
   overflow: hidden;
 }
 
@@ -49,8 +52,8 @@ body {
 /* Estilos para a seção de imagem */
 .image_section {
   display: flex;
-  padding: 10px;
-  margin-bottom: 18px;
+  /* padding: 10px;*/
+  margin: 60px 0; 
   align-items: center;
   justify-content: center;
 }
@@ -69,9 +72,24 @@ body {
 
 /* Estilos para as imagens */
 picture img {
-  width: 26rem;
+  width: 18rem;
 }
-
+@media only screen and (max-width: 330px){
+  .container{
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  picture img {
+    width: 18rem;
+  }
+  .container .content_section p {
+    min-width: 250px;
+    font-size: 1.0rem;
+  }
+  
+}
 /* Estilos para telas maiores que 768px */
 @media only screen and (min-width: 768px) {
   .container {
@@ -83,4 +101,17 @@ picture img {
   .container_btn {
     text-align: start;
   }
+}
+
+/* Estilos específicos para telas com largura entre 820px e 884px */
+@media only screen and (min-width: 800px) and (max-width: 884px) {
+  div .container{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  picture img {
+    width: 24rem;
+  }
+
 }
