@@ -101,6 +101,10 @@ picture img {
   .container_btn {
     text-align: start;
   }
+
+  picture img {
+    width: 28rem;
+  }
 }
 
 /* Estilos específicos para telas com largura entre 820px e 884px */

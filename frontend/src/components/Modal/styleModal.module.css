@@ -1,0 +1,93 @@
+/* Modal.module.css */
+
+.modalStyle {
+  width: 320px;
+  height: 420px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100000;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--black-color);
+  font-family: var(--primary-font);
+  transform: translate(-50%, -50%);
+  background-color: rgb(240, 240, 242);
+  box-shadow: rgba(0, 0, 0, 0.423) 0px 14px 28px,
+    rgba(0, 0, 0, 0.606) 0px 10px 10px;
+   
+}
+
+.modalStyle .btn_close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.modalStyle h1 {
+  margin: 24px;
+  color: var(--light-green-color);
+  font-size: 1.2rem;
+  text-align: center;
+}
+form .container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+form .container input {
+  width: 272px;
+  height: 47px;
+  border: none;
+  margin-top: 4px;
+  padding-left: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 2px 2px 8px 3px rgba(0, 0, 0, 0.31);
+}
+
+form .container .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px; /* Ajuste a posição do ícone conforme necessário */
+  transform: translate(-50% -50px);
+  cursor: pointer;
+}
+button.botaoPersonalizado {
+  width: 272px;
+  height: 52px;
+  color: #fff;
+  margin-top: 18px;
+}
+
+.modalStyle p {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 2px;
+
+}
+.modalStyle .btn_link {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: .7rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--light-green-color);
+  text-decoration-color: var(--light-green-color);
+}
+.validation{
+  font-size: .7rem;
+  margin:6px 0;
+  color: rgb(228, 27, 27);
+  font-weight: 700;
+  height: 8px;
+
+}
