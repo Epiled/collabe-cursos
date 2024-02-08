@@ -3,6 +3,9 @@ import desktopMainImage from "../../assets/images/img_principal-desktop.svg";
 import ButtonPrincipal from "../../components/ButtonPrincipal/ButtonPrincipal";
 import styles from "./home.module.css";
 
+// Estilo vindo white mode
+import stylesExtern from "../../components/WhiteModeSwicth/style_WhiteModeSwicth.module.css"
+
 export default function Home() {
 
   return (
@@ -10,8 +13,8 @@ export default function Home() {
       <section className={styles.content_section}>
         <h1>
         
-          Codificando <span className={styles.highlight}>ideias</span>,
-          construindo o <span className={styles.highlight}>futuro</span>!
+          Codificando <span className={stylesExtern.highlight}>ideias</span>,
+          construindo o <span className={stylesExtern.highlight}>futuro</span>!
         </h1>
 
         <p>

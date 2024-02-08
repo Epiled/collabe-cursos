@@ -1,16 +1,16 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import "./assets/styles/reset.css";
-import ResponsiveNavigation from "./components/ResponsiveNavigation/ResponsiveNavigation";
 
+import "./assets/styles/reset.css";
+import Footer from "./components/Footer/Footer";
+import AppRoutes from "./routes/routes"; 
 
 function App() {
   return (
-    <>
-      <Router>
-        <ResponsiveNavigation />
-      </Router>
-    </>
+    <div className="container_app">
+      <AppRoutes /> 
+      <Footer />
+    </div>
   );
 }
 
 export default App;
+

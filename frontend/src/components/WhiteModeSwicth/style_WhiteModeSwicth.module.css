@@ -1,0 +1,15 @@
+body.whiteMode {
+    background-color: var(--light-white-color01);
+    color: #000000;
+  }
+  
+  body.whiteMode button {
+    color: var(--white-color);
+  }
+  span.highlight{
+    color: var(--main-green-color);
+  }
+  body.whiteMode span.highlight {
+    color: var(--medium-green-color1);
+    
+  }
