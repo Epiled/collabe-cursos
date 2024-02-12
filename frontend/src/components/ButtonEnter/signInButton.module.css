@@ -1,0 +1,37 @@
+.enter_button {
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  transition: background-color 0.2s;
+  box-shadow: inset 0 4px 4.7px 0 rgba(196, 196, 196, 0.672);
+}
+
+@media only screen and (max-width: 768px) {
+  .enter_button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    border-radius: 0 0 0 10px;
+  }
+
+  .enter_button:hover {
+    font-weight: bold;
+    color: var(--medium-green-color2);
+    background-color: rgb(255, 255, 255);
+  }
+}
+@media only screen and (min-width: 769px) {
+  .enter_button {
+    margin: 22px;
+    width: 100px;
+    padding: 4px;
+    background-color: var(--light-green-color);
+    border-radius: 18px;
+  }
+
+  .enter_button:hover {
+    background-color: var(--medium-green-color1);
+  }
+}
